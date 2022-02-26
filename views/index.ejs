@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+  <h1>Calculate your grade average</h1>
+  <form action="/grades">
+    <input id="gradecounter" required autofocus autocomplete="off" name="gradecount" placeholder="How many grades?">
+    <button type="submit">Confirm</button>
+  </form>
+  <div>
+    <h1>An Agam Farajpur website.</h1>
+    <button id="learnmore">Learn more</button>
+  </div>
+
+  <script>
+    document.getElementById('learnmore')
+      .onclick = () => {
+        window.location.href = 'https://agamfaraj.netlify.app';
+      }
+  </script>
+</body>
+</html>
